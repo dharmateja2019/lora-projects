@@ -1,0 +1,55 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+build/
+dist/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===== Virtual environments =====
+venv/
+env/
+.venv/
+
+# ===== Hugging Face (models, datasets, tokenizers cache) =====
+.cache/
+~/.cache/huggingface/
+huggingface_hub/
+*.safetensors
+!adapter_model.safetensors   # uncomment if you DO want to track a specific small adapter
+
+# ===== TensorFlow / Keras dataset & model caches =====
+tensorflow_datasets/
+~/.keras/
+*.h5
+*.keras
+
+# ===== PyTorch checkpoints =====
+*.pt
+*.pth
+*.ckpt
+
+# ===== Our own trained adapter outputs (small but still generated artifacts) =====
+*.npz
+tinyllama-colorist-lora/
+vit-lora-beans-adapter/
+cars_lora_adapter.npz
+vit-lora-beans/
+
+# ===== Downloaded dataset archives =====
+*.tar.gz
+*.zip
+*.tgz
+
+# ===== OS junk =====
+.DS_Store
+Thumbs.db
+
+# ===== IDE / editor =====
+.vscode/
+.idea/
+*.swp
